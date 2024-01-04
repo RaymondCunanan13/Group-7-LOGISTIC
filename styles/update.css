@@ -1,0 +1,116 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Flex container */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Main container styling */
+.container {
+    padding: 0 15px;
+    min-height: 80vh;
+    justify-content: center;
+    background: rgb(15, 16, 53);
+}
+
+/* Page layout styling */
+.new-page {
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Form styling */
+.new-form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto; /* Center the form */
+    margin-top: 20px;
+}
+
+/* Input styling */
+.new-form input {
+    height: 55px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    transition: border-color 0.3s ease; /* Add transition for smoother effect */
+}
+
+/* Focus state for input */
+.new-form input:focus {
+    outline: none;
+    border-color: #ff0000; /* Red color on focus */
+}
+
+/* Remove red border if not empty */
+.new-form input:valid {
+    border-color: #ccc;
+}
+
+/* Button styling */
+.new-button {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-button a {
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.new-button a:hover {
+    background: rgb(15, 16, 53);
+}
+
+/* Password container styling */
+.new-password-container {
+    position: relative;
+}
+
+/* Password input styling */
+.new-password-container input {
+    height: 55px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+/* Eye icon styling */
+.new-password-container .eye-icon {
+    position: absolute;
+    top: 40%;
+    right: 40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding-right: 10px;
+}

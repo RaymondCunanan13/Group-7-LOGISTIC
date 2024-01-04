@@ -1,0 +1,185 @@
+
+
+body {
+    font-family: Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Text color */
+}
+
+header {
+    background: rgb(15, 16, 53);
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+#logo {
+    max-width: 400px; /* Adjust the size as needed */
+    height: auto;
+}
+
+nav {
+    background: rgb(15, 16, 53);
+    padding: 10px;
+    text-align: center;
+    display: flex; /* Align children horizontally */
+    justify-content: space-between; /* Add space between items */
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #D2DBC8;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+}
+
+.nav-link img {
+    max-width: 20px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 5px; /* Adjust the spacing between icon and text */
+}
+
+.dropdown li {
+    padding: 8px;
+    list-style: none; /* Remove bullets from list items */
+}
+ .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #D2DBC8;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .nav-link:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Set position to relative for absolute positioning */
+}
+
+.profile-btn {
+    color: #fff;
+    background-color: #555;
+    border: none;
+    padding: 10px 20px; /* Adjust the padding for a longer button */
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-image {
+            width: 50px; /* Adjust the size as needed */
+            height: 50px; /* Adjust the size as needed */
+            border-radius: 50%; /* Make it circular */
+            margin-right: 10px; /* Add some spacing */
+        }
+
+.profile-table {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
+    width: 100%; /* Set the width to 100% to match the button */
+    position: absolute; /* Position absolutely */
+    top: 100%; /* Position below the button */
+    left: 0; /* Align with the button */
+    background-color: #444;
+}
+
+.profile-table table {
+    width: 100%;
+    margin-top: 10px; /* Add margin for separation from button */
+}
+
+
+
+.profile-table td:first-child {
+    font-weight: bold;
+}
+
+.profile-table td:nth-child(even) {
+    background-color: #555;
+    color: #fff;
+}
+
+.profile-table td:nth-child(odd) {
+    background-color: #444;
+    color: #fff;
+}
+
+#logout {
+            order: 1;
+        }
+
+        
+
+        #content {
+    text-align: center; /* Center-align the content */
+    color: black; /* Set the text color to black */
+    background: linear-gradient(to bottom, #8383cb, #2a2a6a); /* Gradient black background */
+
+}
+
+#content h1, #content h2 {
+    color: inherit; /* Inherit the black color from the parent (#content) */
+}
+*{
+    margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+}
+ 
+#content{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 1px solid #cbcbcb;
+}
+form{
+    width: 50%;
+    margin: 20px auto;
+}
+ 
+#display-image{
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    margin: 15px;
+}
+img{
+    margin: 5px;
+    width: 350px;
+    height: 250px;
+}
+.green-button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 16px; /* Font size of the text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Optional: Style for button hover effect */
+.green-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

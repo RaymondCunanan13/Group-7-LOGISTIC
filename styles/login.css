@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 0 15px;
+    min-height: 80vh;
+    justify-content: center;
+    background: rgb(15, 16, 53);
+}
+
+.goshdc-page {
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin */
+}
+
+.logo-img {
+    max-width: 400px; /* Adjust the size of the logo */
+}
+
+.goshdc-page .text {
+    color: #fff; /* Set the text color to white */
+}
+
+.goshdc-page h1 {
+    color: #fff;
+    font-size: 3.5rem; /* Adjust the font size */
+    margin-bottom: 10px;
+}
+
+.goshdc-page p {
+    font-size: 1.5rem; /* Adjust the font size */
+    white-space: nowrap;
+    color: #fff; /* Set the text color to white */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Rest of the CSS remains the same */
+
+
+
+form input {
+    height: 55px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+    padding-right: 40px; /* Increased padding for the eye icon */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px; /* Size of the eye icon */
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.link .login {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(15, 16, 53);
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.link .login:hover {
+    background: #0d65d9;
+}
+
+form a {
+    text-decoration: none;
+}
+
+.link .forgot {
+    color: #1877f2;
+    font-size: 0.875rem;
+}
+
+.link .forgot:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button a {
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.button a:hover {
+    background:  rgb(15, 16, 53);
+;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    height: 55px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+.password-container .eye-icon {
+    position: absolute;
+    top: 40%;
+    right: 40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  @keyframes roll {
+      0% {
+        transform: translateX(0) rotate(0deg);
+      }
+      25% {
+        transform: translateX(25%) rotate(90deg);
+      }
+      50% {
+        transform: translateX(50%) rotate(180deg);
+      }
+      75% {
+        transform: translateX(75%) rotate(270deg);
+      }
+      100% {
+        transform: translateX(100%) rotate(360deg);
+      }
+    }
+
+    /* Apply the animation to the logo-img class */
+    .logo-img {
+      position: absolute;
+      left: 0; /* Initial position on the left */
+      top: 50%; /* Adjust as needed */
+      animation: roll 4s linear 1 forwards; /* Adjust the duration and iteration count as needed */
+    }
+

@@ -1,0 +1,66 @@
+body {
+    font-family: Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* Text color */
+}
+
+header {
+    background: rgb(15, 16, 53);
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.message-btn {
+    color: #fff;
+    background-color: rgb(15, 16, 53); /* Updated color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Center the message button */
+form {
+    text-align: center;
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+table {
+    margin: 0 auto; /* Center-align the table */
+    width: 50%; /* Adjust the width as needed */
+    border-collapse: collapse; /* Collapse borders to connect rows */
+}
+
+tbody {
+    list-style: none;
+    padding: 0;
+}
+
+tr {
+    border-bottom: 1px solid #fff; /* White connecting line */
+    padding: 10px;
+    position: relative;
+}
+
+td {
+    padding-left: 20px;
+}
+
+td:before {
+    content: "\2022"; /* Unicode character for a bullet point */
+    color: #fff; /* Bullet point color */
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 50%; /* Center the bullet point vertically */
+    transform: translateY(-50%); /* Adjust to center the bullet point */
+}

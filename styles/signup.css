@@ -1,0 +1,221 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Flex container */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Main container styling */
+.container {
+    padding: 0 15px;
+    min-height: 80vh;
+    justify-content: center;
+    background: rgb(15, 16, 53);
+}
+
+/* Page layout styling */
+.goshdc-page {
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Logo styling */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    max-width: 400px;
+}
+
+/* Page text styling */
+.goshdc-page .text {
+    color: #fff;
+}
+
+/* Heading styling */
+.goshdc-page h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.goshdc-page p {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    color: #fff;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto; /* Center the form */
+}
+
+/* Input styling */
+form input {
+    height: 55px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    transition: border-color 0.3s ease; /* Add transition for smoother effect */
+}
+
+/* Focus state for input */
+form input:focus {
+    outline: none;
+    border-color: #ff0000; /* Red color on focus */
+}
+
+/* Remove red border if not empty */
+form input:valid {
+    border-color: #ccc;
+}
+
+/* Link container styling */
+.link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+/* Login button styling */
+.link .login {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(15, 16, 53);
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.link .login:hover {
+    background: #0d65d9;
+}
+
+/* Link styling */
+form a {
+    text-decoration: none;
+}
+
+/* Terms link styling */
+.link .terms-link {
+    color: #1877f2;
+    font-size: 0.875rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link .terms-link:hover {
+    color: #0d65d9;
+}
+
+/* Forgot link styling */
+.link .forgot {
+    color: #1877f2;
+    font-size: 0.875rem;
+}
+
+.link .forgot:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal line styling */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Button styling */
+.button {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button a {
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.button a:hover {
+ background: rgb(16,10,92);
+}
+
+/* Password container styling */
+.password-container {
+    position: relative;
+}
+
+/* Password input styling */
+.password-container input {
+    height: 55px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+/* Eye icon styling */
+.password-container .eye-icon {
+    position: absolute;
+    top: 40%;
+    right: 40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding-right: 10px;
+
+}
+
+/* Checkbox styling */
+#agreeTerms {
+    transform: scale(0.8);
+}
+
+/* Checkbox label styling */
+.checkbox-label {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
